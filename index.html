@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Quiz di Compleanno 🐯</title>
+  <!-- Favicon tigre -->
+  <link rel="icon" type="image/png" href="https://emojiapi.dev/api/v1/1f42f.png" />
+
   <style>
     :root {
       --bg1: #050816;
@@ -585,7 +588,7 @@
 
           <div class="meta-row">
             <div class="chip">
-              <div class="chip-badge">5</div>
+              <div class="chip-badge">10</div>
               <span>domande a schermate</span>
             </div>
             <div class="chip">
@@ -593,9 +596,10 @@
               <span>tentativi consentiti</span>
             </div>
           </div>
-          <div class="progress-text" id="progress-text">Domanda 1, ià</div>
+          <div class="progress-text" id="progress-text">Domanda 1 di 10</div>
 
           <form id="quiz-form">
+            <!-- Q1 -->
             <div class="question-step" data-step="0">
               <div class="question-id">Q1 · INIT</div>
               <h3>Non è vero, non farò domande su di me: è il tuo compleanno, non il mio.</h3>
@@ -607,6 +611,7 @@
               <div class="answer-feedback" data-feedback-for="q1"></div>
             </div>
 
+            <!-- Q2 -->
             <div class="question-step" data-step="1">
               <div class="question-id">Q2 · SCENARIO</div>
               <h3>Cosa preferiresti tra:</h3>
@@ -618,35 +623,38 @@
               <div class="answer-feedback" data-feedback-for="q2"></div>
             </div>
 
+            <!-- Q3 -->
             <div class="question-step" data-step="2">
               <div class="question-id">Q3 · SKILL</div>
               <h3>Qual è il tuo super-potere segreto?</h3>
               <div class="answers">
-                <label><input type="radio" name="q3" value="a" /> Addormentarti ovunque in 3 minuti 😴</label>
-                <label><input type="radio" name="q3" value="b" /> Non ti fermi mai 😂</label>
-                <label><input type="radio" name="q3" value="c" /> Vantarti degli uomini che compri con l'uomo della tua vita.</label>
+                <label><input type="radio" name="q3" value="a" /> Addormentarti dopo 2 minuti di film.</label>
+                <label><input type="radio" name="q3" value="b" /> Non ti fermi mai.</label>
+                <label><input type="radio" name="q3" value="c" /> Vantarti degli uomini che compri con il tuo fidanzato.</label>
               </div>
               <div class="answer-feedback" data-feedback-for="q3"></div>
             </div>
 
+            <!-- Q4 -->
             <div class="question-step" data-step="3">
               <div class="question-id">Q4 · RED FLAG</div>
-              <h3>Cosa odi di più in assoluto?</h3>
+              <h3>Cosa odia la Tigre di più in assoluto?</h3>
               <div class="answers">
                 <label><input type="radio" name="q4" value="a" /> Arrivare in ritardo.</label>
-                <label><input type="radio" name="q4" value="b" /> Le persone che rispondono "vediamo".</label>
+                <label><input type="radio" name="q4" value="b" /> Le persone che dicono “vediamo”.</label>
                 <label><input type="radio" name="q4" value="c" /> L’ananas sulla pizza.</label>
               </div>
               <div class="answer-feedback" data-feedback-for="q4"></div>
             </div>
 
+            <!-- Q5 -->
             <div class="question-step" data-step="4">
               <div class="question-id">Q5 · CORE</div>
               <h3>Cosa deve esserci oggi per renderti davvero felice?</h3>
               <div class="answers">
-                <label><input type="radio" name="q5" value="a" /> Tanti regali costosi 🎁</label>
-                <label><input type="radio" name="q5" value="b" /> Le persone a cui vuoi bene ❤️</label>
-                <label><input type="radio" name="q5" value="c" /> Una torta gigantesca 🎂</label>
+                <label><input type="radio" name="q5" value="a" /> Regali costosi.</label>
+                <label><input type="radio" name="q5" value="b" /> Le persone a cui vuoi bene.</label>
+                <label><input type="radio" name="q5" value="c" /> Una torta gigantesca.</label>
               </div>
               <div class="answer-feedback" data-feedback-for="q5"></div>
             </div>
@@ -669,8 +677,8 @@
               <h3>Cosa ti rende speciale nelle relazioni?</h3>
               <div class="answers">
                 <label><input type="radio" name="q7" value="a" /> La tua lealtà.</label>
-                <label><input type="radio" name="q7" value="b" /> Il modo in cui capisci le persone.</label>
-                <label><input type="radio" name="q7" value="c" /> La sensibilità con cui affronti tutto.</label>
+                <label><input type="radio" name="q7" value="b" /> Il modo in cui capisci gli altri.</label>
+                <label><input type="radio" name="q7" value="c" /> La tua sensibilità.</label>
               </div>
               <div class="answer-feedback" data-feedback-for="q7"></div>
             </div>
@@ -678,11 +686,11 @@
             <!-- Q8 -->
             <div class="question-step" data-step="7">
               <div class="question-id">Q8 · IMPACT</div>
-              <h3>Qual è il tuo impatto sugli altri?</h3>
+              <h3>In cosa sei bravissima?</h3>
               <div class="answers">
-                <label><input type="radio" name="q8" value="a" /> Dai stabilità.</label>
+                <label><input type="radio" name="q8" value="a" /> Essere una trottola e anche punto fermo.</label>
                 <label><input type="radio" name="q8" value="b" /> Rassicuri chi hai accanto.</label>
-                <label><input type="radio" name="q8" value="c" /> Porti un'energia unica.</label>
+                <label><input type="radio" name="q8" value="c" /> Porti un’energia unica.</label>
               </div>
               <div class="answer-feedback" data-feedback-for="q8"></div>
             </div>
@@ -694,7 +702,7 @@
               <div class="answers">
                 <label><input type="radio" name="q9" value="a" /> La resilienza.</label>
                 <label><input type="radio" name="q9" value="b" /> La tua empatia.</label>
-                <label><input type="radio" name="q9" value="c" /> La tua eleganza emotiva.</label>
+                <label><input type="radio" name="q9" value="c" /> Eleganza emotiva.</label>
               </div>
               <div class="answer-feedback" data-feedback-for="q9"></div>
             </div>
@@ -768,7 +776,7 @@
   </div>
 
   <script>
-    // risposte corrette
+    // risposte “considerate giuste” per il punteggio finale (puoi cambiarle)
     const correctAnswers = { q1: "b", q2: "a", q3: "c", q4: "b", q5: "b" };
 
     // feedback per ogni risposta
@@ -781,47 +789,47 @@
       q2: {
         a: "Comfort zone approvata per il riposo della Tigre.",
         b: "Modalità party animal attivata.",
-        c: ""
+        c: "."
       },
       q3: {
-        a: "Skill da gattone professionista del divano.",
+        a: "Skill da gattona.",
         b: "Questo super-potere è illegale in 12 stati.",
         c: "L’importante è ridere, sempre."
       },
       q4: {
-        a: "La puntualità è una forma d’arte.",
+        a: "Se vabbò, il ritardo è una forma d'arte.",
         b: "Questa è proprio una red flag universale.",
         c: "La comunità italiana ti ringrazia."
       },
       q5: {
-        a: "Capisco. Ma i soldi non fanno tutto (forse).",
+        a: "Ti presento qualche amico se vuoi..",
         b: "Questa era la risposta giusta anche a livello morale.",
         c: "Approvo la visione a base di carboidrati."
       },
       q6: {
         a: "La gentilezza che non fai pesare è una delle cose più rare.",
-        b: "La tua forza la vedono tutti, tranne te.",
-        c: "Sai creare comfort meglio di un plaid e una serie tv."
+        b: "La tua forza che vedono tutti, tranne te.",
+        c: "Sai creare comfort meglio di plaid e Scrubs."
       },
       q7: {
-        a: "La tua lealtà è praticamente a prova di apocalisse.",
-        b: "Capire le persone è il tuo superpotere passivo.",
+        a: "La odiamo, ma è speciale.",
+        b: "Sei davvero fortissima a volte.",
         c: "La tua sensibilità è un’arma potentissima, anche quando non te ne accorgi."
       },
       q8: {
-        a: "Essere punto fermo non è da tutti: tu lo fai sembrare normale.",
+        a: "Essere una trottola e anche punto fermo non è da tutti: tu lo fai sembrare normale.",
         b: "Solo la tua presenza abbassa l’ansia generale del 30%.",
-        c: "L’energia che porti non si compra, si è e basta."
+        c: "L’energia che mi lasci non si compra alla Coop, si è e basta."
       },
       q9: {
-        a: "Ti rialzi più volte di quante ti dai credito.",
+        a: "Ma che è, un tatuaggio che non ti sei fatta a 18 anni?.",
         b: "Sentire così tanto gli altri è un dono, non un difetto.",
-        c: "Eleganza emotiva = sapere sentire senza fare casino."
+        c: "Sapere sentire senza fare casino."
       },
       q10: {
         a: "Stai imparando a sceglierti, e si vede molto più di quanto pensi.",
         b: "Il rispetto che ti dai alza automaticamente il tuo valore percepito (e reale).",
-        c: "Lasciarti andare alle emozioni ti rende ancora più vera, non il contrario."
+        c: "Lasciarti andare ti rende ancora più vera, non il contrario."
       }
     };
 
@@ -882,7 +890,8 @@
       input.addEventListener("change", () => {
         const name = input.name;   // q1, q2, ...
         const value = input.value; // a, b, c
-        const feedbackText = (answerFeedback[name] and answerFeedback[name][value]) or "";
+        const feedbackText =
+          (answerFeedback[name] && answerFeedback[name][value]) || "";
 
         const stepEl = input.closest(".question-step");
         const fbEl = stepEl.querySelector(".answer-feedback");
@@ -910,9 +919,9 @@
 
       let msg = "";
       if (score === total) {
-        msg = "Modalità TIGRE LEGGENDARIA: Questo test è il mio regalo per farti capire quanto vali in questa relazione e anche fuori, perchè a volte in te non vedi la luce che hai, e ricordarti che sei una forza della natura è un bellissimo regalo! 🐯✨";
+        msg = "Modalità TIGRE LEGGENDARIA: Questo test è il mio regalo per farti capire quanto vali in questa relazione e anche fuori, perché a volte in te non vedi la luce che hai, e ricordarti che sei una forza della natura è un bellissimo regalo! 🐯✨";
       } else if (score >= total - 1) {
-        msg = "Quasi full tiger: sei pericolosamente vicino al livello massimo. Mi sa che ti voglio parecchio bene 🧡, ma vedi di farle giuste mongolò";
+        msg = "Quasi full tiger: sei pericolosamente vicino al livello massimo. Mi sa che ti voglio parecchio bene 🧡, ma vedi di farle giuste mongolò.";
       } else if (score >= Math.ceil(total / 2)) {
         msg = "Tiger in training: il potenziale c’è, ma serve altro allenamento tra una birra e l’altra. 💬";
       } else {
@@ -930,3 +939,4 @@
   </script>
 </body>
 </html>
+
